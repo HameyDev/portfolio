@@ -31,7 +31,7 @@ export default function SkillsTabs() {
       id="skills"
       className="min-h-screen px-6 md:px-20 flex flex-col items-center justify-center bg-gray-100"
     >
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2 mt-10 md:mt-0">
         Skills & <span className="text-blue-600">Expertise</span>
       </h2>
       <p className="text-center text-sm md:text-md text-gray-500 mb-10">
@@ -65,7 +65,7 @@ export default function SkillsTabs() {
       </div>
 
       {/* Content */}
-      <div className="max-w-5xl mx-auto h-[300px]">
+      <div className="max-w-5xl mx-auto md:h-[300px]">
         <AnimatePresence mode="wait">
           {activeTab === "technical" && (
             <motion.div
@@ -241,12 +241,12 @@ function TabButton({ label, tab, activeTab, setActiveTab, icon }) {
   return (
     <button
       onClick={() => setActiveTab(tab)}
-      className={`relative z-10 w-[90px] md:w-40 h-10 text-xs md:text-sm px-2 font-medium rounded-full transition-all duration-300 flex items-center justify-center gap-2 ${
+      className={`relative z-10 w-[91px] md:w-40 h-10 text-xs md:text-sm px-2 font-medium rounded-full transition-all duration-300 flex items-center justify-center gap-2 ${
         isActive ? "text-white" : "text-gray-800"
       }`}
     >
       {React.cloneElement(icon, {
-        className: `w-5 h-5 ${isActive ? "text-white" : "text-gray-600"}`,
+        className: `w-7 h-3 ${isActive ? "text-white" : "text-gray-600"}`,
       })}
 
       {label}

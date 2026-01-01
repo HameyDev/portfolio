@@ -22,7 +22,7 @@ export default function ProjectsFilter() {
 
   return (
     <section id="projects" className="min-h-screen flex flex-col items-center justify-center px-6 md:px-20 bg-white">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2 mt-10 md:mt-0">
         My <span className="text-blue-600">Projects</span>
       </h2>
       <p className="text-center text-sm md:text-md text-gray-500 mb-10">
