@@ -77,7 +77,7 @@ export default function SkillsTabs() {
               className="grid sm:grid-cols-2 md:grid-cols-3 gap-8"
             >
               {technicalSkills.map((section, i) => (
-                <div key={i} className="shadow-lg bg-white  px-8 py-8 transform duration-300 hover:-translate-y-1 hover:shadow-blue-600">
+                <div key={i} className="shadow-lg bg-white  px-8 py-8 transform duration-300 hover:-translate-y-1 hover:shadow-blue-600 rounded-md">
                   {/* Category Heading with Icon */}
                   <div className="flex items-center gap-2 mb-4 ">
                     <div className="rounded-full flex items-center justify-center w-8 h-8 bg-blue-800">
