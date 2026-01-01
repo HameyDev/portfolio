@@ -47,7 +47,7 @@ export default function About() {
           initial={{ opacity: 0, x: 0 }}
           whileInView={{ opacity: 1, x: 30 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 w-full md:w-2/3"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 w-full md:w-2/3"
         >
           {/* Bio */}
           <InfoCard
@@ -79,8 +79,8 @@ export default function About() {
             title="Contact"
             text={
               <>
-                Email: hammad@example.com <br />
-                Phone: +92-XXX-XXXXXXX <br />
+                Email: mhammad.zulfiqar.se@gmail.com <br />
+                Phone: +923338248340 <br />
                 LinkedIn: linkedin.com/in/hammad
               </>
             }
@@ -91,7 +91,7 @@ export default function About() {
           <InfoCard
             icon={<FaMapMarkerAlt />}
             title="Location"
-            text="Based in Lahore, Pakistan. Available for remote work worldwide."
+            text="Based in Islamabad, Pakistan. Available for remote work worldwide."
             color="red"
           />
 
@@ -99,7 +99,7 @@ export default function About() {
           <InfoCard
             icon={<FaGraduationCap />}
             title="Education Summary"
-            text="BS in Software Engineering (2016–2020). Full-Stack Bootcamp Graduate (2021)."
+            text="BS in Software Engineering (2019–2024)."
             color="teal"
           />
 
@@ -115,7 +115,7 @@ export default function About() {
                 <FaLinkedin />
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/HameyDev"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center rounded-full w-8 h-8 shadow text-center hover:bg-black hover:text-white transform transition duration-300"

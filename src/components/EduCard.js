@@ -1,5 +1,5 @@
 // Reusable Card
-import { FaMapMarkerAlt, FaCalendarAlt, FaCode } from "react-icons/fa";
+import { FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
 
 
 export default function EduCard({

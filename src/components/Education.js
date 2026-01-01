@@ -86,7 +86,7 @@ export default function Education() {
               institution="Capital University of Science & Technology"
               description="Passionate and detail-oriented software developer with a strong foundation in full-stack web development. Experienced in building responsive, high-performance applications using modern technologies like React.js, Next.js, Node.js, and MongoDB."
               location="Islamabad, Pakistan"
-              years="2020 - 2024"
+              years="2019 - 2024"
               gpa="3.15/4.00"
               status="Graduated"
               courses={[
@@ -97,17 +97,16 @@ export default function Education() {
                 "Web Development",
               ]}
               achievements={[
-                "Dean's List for 6 Semesters",
-                "Capstone Project Award",
-                "2nd Place in Hackathon",
+                "Completed final year project successfully",
+                "Participated in university-level technical activities and hackathons",
               ]}
             />
             {/* Bootcamp Card */}
             <EduCard
               icon={<FaCode />}
               title="Full Stack Web Development"
-              degree="Intensive Bootcamp"
-              institution="MERN Bootcamp – Online"
+              degree="MERN Stack"
+              institution="NS Training"
               description="Passionate and detail-oriented software developer with a strong foundation in full-stack web development. Experienced in building responsive, high-performance applications using modern technologies like React.js, Next.js, Node.js, and MongoDB."
               location="Remote"
               years="2025"
@@ -121,7 +120,6 @@ export default function Education() {
                 "Deployment",
               ]}
               achievements={[
-                "Top 10% in class",
                 "Built and deployed 5 projects",
                 "Mentored junior developers",
               ]}

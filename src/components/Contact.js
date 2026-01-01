@@ -13,13 +13,13 @@ export default function Contact() {
   const [activeTab, setActiveTab] = useState("form");
 
   return (
-    <section id="contact" className="min-h-screen flex flex-col justify-center px-6 md:px-20">
+    <section id="contact" className="min-h-screen flex flex-col justify-center px-6 md:px-20 bg-gray-100 py-10">
       <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2">
         Contact <span className="text-blue-600">Me</span>
       </h2>
       <p className="text-center text-sm md:text-md text-gray-500 mb-10">Let’s get connected</p>
 
-      <div className="relative w-fit mx-auto mb-10 bg-gray-100 p-1 px-2 rounded-full shadow-inner flex">
+      <div className="relative w-fit mx-auto mb-10 bg-white p-1 px-2 rounded-full shadow-inner flex">
         {/* Sliding Blue Background */}
         <span
           className={`absolute top-1 left-1 w-1/2 h-10 rounded-full bg-blue-600 transition-all duration-300 ${
@@ -138,7 +138,7 @@ function MethodsView() {
           </div>
         </div>
         <h4 className="font-bold text-gray-800 mb-1">Email</h4>
-        <p className="text-gray-600 text-sm">hammad@example.com</p>
+        <p className="text-gray-600 text-sm">mhammad.zulfiqar.se@gmail.com</p>
       </div>
 
       {/* Social Media Card */}
@@ -158,7 +158,7 @@ function MethodsView() {
             <FaLinkedin />
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/HameyDev"
             target="#"
             className="hover:text-black"
           >
@@ -182,7 +182,7 @@ function MethodsView() {
           </div>
         </div>
         <h4 className="font-bold text-gray-800 mb-1">Phone</h4>
-        <p className="text-gray-600 text-sm">+92-XXX-XXXXXXX</p>
+        <p className="text-gray-600 text-sm">+923338248340</p>
       </div>
     </div>
     </div>

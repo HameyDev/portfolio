@@ -15,19 +15,19 @@ function App() {
       <section id="hero" className="min-h-screen w-6xl mx-auto flex justify-center items-center">
         <Hero />
       </section>
-      <section id="about" className="min-h-screen ">
+      <section id="about" className="min-h-screen pt-5">
         <About />
       </section>
-      <section id="education">
+      <section id="education" className="pt-10">
         <Education />
       </section>
-      <section id="skills">
+      <section id="skills" className="pt-10">
         <SkillsTabs />
       </section>
-      <section id="projects">
+      <section id="projects" className="pt-6">
         <ProjectsFilter />
       </section>
-      <section id="contact">
+      <section id="contact" className="pt-10">
         <Contact />
       </section>
       <Footer />

@@ -1,5 +1,5 @@
 import { FaLinkedin, FaGithub, FaEnvelope, FaDownload, FaPaperPlane } from "react-icons/fa";
-import { FaCalendarAlt, FaCheckCircle, FaSmile, FaCodeBranch, } from "react-icons/fa";
+import { FaCalendarAlt, FaCheckCircle, FaSmile, } from "react-icons/fa";
 
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";

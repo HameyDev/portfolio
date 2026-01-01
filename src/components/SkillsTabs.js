@@ -65,7 +65,7 @@ export default function SkillsTabs() {
       </div>
 
       {/* Content */}
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto h-[300px]">
         <AnimatePresence mode="wait">
           {activeTab === "technical" && (
             <motion.div
