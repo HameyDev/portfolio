@@ -30,9 +30,9 @@ export default function About() {
         {/* Left Side Image */}
         <motion.div
           initial={{ opacity: 0, x: 0 }}
-          whileInView={{ opacity: 1, x: -30 }}
+          whileInView={{ opacity: 1, x: window.innerWidth >= 768 ? 30 : 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="flex justify-center md:w-1/3 w-full ml-8 mb-5"
+          className="flex justify-center md:w-1/3 w-full mb-5"
           whileHover={{ rotate: [0, 2, -2, 2, -2, 0] }}
         >
           <img
