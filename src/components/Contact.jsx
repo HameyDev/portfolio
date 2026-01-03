@@ -129,9 +129,9 @@ function FormView() {
 function MethodsView() {
   return (
     <div className="h-[454px]">
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-3 max-w-5xl mx-auto">
       {/* Email Card */}
-      <div className="bg-white p-6 rounded-lg shadow text-center">
+      <div className="bg-white p-4 rounded-lg shadow text-center">
         <div className="flex justify-center mb-4">
           <div className="bg-blue-100 text-blue-600 p-3 rounded-full text-xl">
             <FaEnvelope />
@@ -142,7 +142,7 @@ function MethodsView() {
       </div>
 
       {/* Social Media Card */}
-      <div className="bg-white p-6 rounded-lg shadow text-center">
+      <div className="bg-white p-4 rounded-lg shadow text-center">
         <div className="flex justify-center mb-4">
           <div className="bg-purple-100 text-purple-600 p-3 rounded-full text-xl">
             <FaLinkedin />
@@ -175,7 +175,7 @@ function MethodsView() {
       </div>
 
       {/* Phone Card */}
-      <div className="bg-white p-6 rounded-lg shadow text-center">
+      <div className="bg-white p-4 rounded-lg shadow text-center">
         <div className="flex justify-center mb-4">
           <div className="bg-green-100 text-green-600 p-3 rounded-full text-xl">
             <FaPhoneAlt />

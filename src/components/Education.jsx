@@ -38,7 +38,7 @@ export default function Education() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="relative w-fit mx-auto mb-8 bg-gray-100 p-1 rounded-full shadow-inner flex"
+        className="relative w-fit mx-auto mb-8 bg-gray-100 p-1  rounded-full shadow-inner flex"
       >
         {/* Sliding Background */}
         <span
@@ -50,16 +50,17 @@ export default function Education() {
         {/* Buttons */}
         <button
           onClick={() => setActiveTab("formal")}
-          className={`relative z-10 w-[140px] md:w-40 h-10 text-xs md:text-sm font-medium rounded-full transition-all duration-300 ${
+          className={`relative z-10 w-[150px] md:w-40 h-10 text-xs md:text-sm font-medium rounded-full transition-all duration-300 flex items-center justify-center gap-1 ${
             activeTab === "formal" ? "text-white" : "text-gray-800"
           }`}
         >
+          <FaGraduationCap className="text-base" />
           Formal Education
         </button>
 
         <button
           onClick={() => setActiveTab("cert")}
-          className={`relative z-10 w-[140px] md:40 h-10 text-xs md:text-sm font-medium rounded-full transition-all duration-300 flex items-center justify-center gap-2 ${
+          className={`relative z-10 w-[150px] md:40 h-10 text-xs md:text-sm font-medium rounded-full transition-all duration-300 flex items-center justify-center gap-2 ${
             activeTab === "cert" ? "text-white" : "text-gray-800"
           }`}
         >
