@@ -1,35 +1,61 @@
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
+import { useRef } from "react";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 import About from "./components/About";
 import Education from "./components/Education";
 import SkillsTabs from "./components/SkillsTabs";
 import ProjectsFilter from "./components/ProjectsFilter";
 import Contact from "./components/Contact";
-
+import Footer from "./components/Footer";
 
 function App() {
+  
+  const heroRef = useRef(null);
+  const aboutRef = useRef(null);
+  const educationRef = useRef(null);
+  const skillsRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
   return (
-    <div>
-      <Navbar />
-      <section id="hero" className="min-h-screen w-6xl mx-auto flex justify-center items-center">
-        <Hero />
+    <div className="scroll-smooth">
+      
+      <Navbar
+        refs={{
+          heroRef,
+          aboutRef,
+          educationRef,
+          skillsRef,
+          projectsRef,
+          contactRef,
+        }}
+      />
+
+      
+      <section ref={heroRef} className="min-h-screen flex justify-center items-center">
+        <Hero contactRef={contactRef} />
       </section>
-      <section id="about" className="min-h-screen pt-5">
+
+      <section ref={aboutRef} className="min-h-screen">
         <About />
       </section>
-      <section id="education" className="pt-10">
+
+      <section ref={educationRef} className="min-h-screen">
         <Education />
       </section>
-      <section id="skills" className="pt-10">
+
+      <section ref={skillsRef} className="min-h-screen">
         <SkillsTabs />
       </section>
-      <section id="projects" className="pt-6">
+
+      <section ref={projectsRef} className="min-h-screen">
         <ProjectsFilter />
       </section>
-      <section id="contact" className="pt-10">
-        <Contact />
+
+      <section ref={contactRef} className="min-h-screen">
+        <Contact ref={contactRef} />
       </section>
+
       <Footer />
     </div>
   );

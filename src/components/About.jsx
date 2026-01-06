@@ -19,7 +19,7 @@ export default function About() {
       id="about"
       className="min-h-screen flex flex-col items-center justify-center px-3 md:px-20 py-10 bg-gray-100"
     >
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">
+      <h2 className="text-3xl font-bold text-center text-gray-800 mb-2 mt-10 md:mt-0">
         About <span className="text-blue-600">Me</span>
       </h2>
       <p className="text-center text-sm md:text-md text-gray-500 mb-10">

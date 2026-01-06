@@ -26,7 +26,7 @@ export default function Education() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="min-h-screen flex flex-col items-center justify-center px-3 md:px-20 py-10"
     >
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">
+      <h2 className="text-3xl font-bold text-center text-gray-800 mb-2 mt-10 md:mt-0">
         Educational <span className="text-blue-600">Background</span>
       </h2>
       <p className="text-center text-sm md:text-md text-gray-500 mb-10">
@@ -69,7 +69,7 @@ export default function Education() {
         </button>
       </motion.div>
 
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait" >
         {activeTab === "formal" ? (
           <motion.div
             key="formal"
@@ -77,7 +77,7 @@ export default function Education() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
-            className="grid md:grid-cols-2 gap-6"
+            className="grid md:grid-cols-2 gap-6 w-full md:h-[400px]"
           >
             {/* Degree Card */}
             <EduCard
@@ -133,7 +133,7 @@ export default function Education() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full md:h-[400px]"
           >
             {[ /* Certificates Array */ 
               {
@@ -187,7 +187,7 @@ export default function Education() {
             ].map((cert, i) => (
               <div
                 key={i}
-                className="bg-white p-4 rounded-lg shadow flex flex-col items-center text-center space-y-3 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-black"
+                className="bg-white p-4 rounded-lg shadow flex flex-col items-center justify-center text-center space-y-3 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-black"
               >
                 <div>{cert.logo}</div>
                 <h3 className="font-semibold text-gray-800 text-sm">{cert.title}</h3>

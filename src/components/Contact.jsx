@@ -9,11 +9,11 @@ import {
 } from "react-icons/fa";
 import { AnimatePresence, motion } from "framer-motion";
 
-export default function Contact() {
+export default function Contact({ ref }) {
   const [activeTab, setActiveTab] = useState("form");
 
   return (
-    <section id="contact" className="min-h-screen flex flex-col justify-center px-6 md:px-20 bg-gray-100 py-10">
+    <section ref={ref} className="min-h-screen flex flex-col justify-center px-6 md:px-20 bg-gray-100 py-10">
       <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2">
         Contact <span className="text-blue-600">Me</span>
       </h2>

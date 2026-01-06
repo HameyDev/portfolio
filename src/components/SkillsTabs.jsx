@@ -29,7 +29,7 @@ export default function SkillsTabs() {
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       id="skills"
-      className="min-h-screen px-6 md:px-20 flex flex-col items-center justify-center bg-gray-100"
+      className="min-h-screen py-10 px-6 md:px-20 flex flex-col items-center justify-center bg-gray-100"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2 mt-10 md:mt-0">
         Skills & <span className="text-blue-600">Expertise</span>

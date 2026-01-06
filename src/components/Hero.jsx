@@ -4,7 +4,13 @@ import { FaCalendarAlt, FaCheckCircle, FaSmile, } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 
-export default function Hero() {
+export default function Hero({ contactRef }) {
+
+    const scrollToContact = () => {
+        if (!contactRef || !contactRef.current) return;
+
+        contactRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
 
     return (
         <motion.section
@@ -66,13 +72,13 @@ export default function Hero() {
                     </a>
 
                     {/* Contact Me Button */}
-                    <a
-                        href="#contact"
+                    <button
+                        onClick={scrollToContact}
                         className="text-sm flex items-center gap-2 px-9 py-3 border border-blue-600 text-blue-600 rounded-xl font-semibold bg-white hover:bg-blue-50 transition duration-300"
                     >
                         <FaPaperPlane className="text-base" />
                         Contact Me
-                    </a>
+                    </button>
                 </div>
 
                 <div>

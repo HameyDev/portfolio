@@ -21,7 +21,7 @@ export default function ProjectsFilter() {
       : allProjects.filter((p) => p.category === activeCategory);
 
   return (
-    <section id="projects" className="min-h-screen flex flex-col items-center justify-center px-6 md:px-20 bg-white">
+    <section id="projects" className="min-h-screen flex flex-col items-center justify-center py-10 px-6 md:px-20 bg-white">
       <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2 mt-10 md:mt-0">
         My <span className="text-blue-600">Projects</span>
       </h2>
