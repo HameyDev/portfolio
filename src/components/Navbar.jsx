@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Navbar({ refs }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  
 
   const navLinks = [
     { name: "Home", ref: refs.heroRef },
@@ -15,17 +15,21 @@ export default function Navbar({ refs }) {
   ];
 
   const handleScroll = (ref) => {
-  if (!ref || !ref.current) return;
-  ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
-  setMenuOpen(false);
-};
-
+    if (!ref || !ref.current) return;
+    ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    setMenuOpen(false);
+  };
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        <h1 className="text-xl font-bold text-gray-800">My Portfolio</h1>
 
+        <Link to="/">
+          <h1 className="text-xl font-bold text-gray-800 cursor-pointer">
+            My Portfolio
+          </h1>
+        </Link>
+        
         {/* Desktop */}
         <nav className="hidden md:flex gap-6">
           {navLinks.map((link) => (
@@ -39,7 +43,6 @@ export default function Navbar({ refs }) {
             </button>
           ))}
         </nav>
-
         {/* Mobile toggle */}
         <button
           type="button"
