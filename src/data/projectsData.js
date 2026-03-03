@@ -6,12 +6,13 @@ import {
 
 export const allProjects = [
   {
-    title: "Event Booking App",
-    category: "Frontend",
-    description: "Book and manage events with full CRUD and admin panel.",
-    tech: ["React", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/yourname/event-booking",
-    live: "#",
+    title: "FlavorVerse Pizza",
+    category: "FullStack",
+    description:
+      "Modern pizza ordering website with size, flavors, and cart system.",
+    tech: ["React", "Tailwind", "Framer Motion", "Context API"],
+    github: "https://github.com/HameyDev/mern-food-app",
+    live: "https://mern-food-app-frontend-0meh.onrender.com/",
     icon: <FaLaptopCode />,
   },
   {
