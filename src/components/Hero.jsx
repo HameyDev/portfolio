@@ -93,7 +93,7 @@ export default function Hero({ contactRef }) {
                         </div>
                         <div>
                             <p className="text-sm font-bold text-blue-600">2+</p>
-                            <p className="text-gray-600 text-[10px]">Years Experience</p>
+                            <p className="text-gray-600 text-[10px]">Learning & Building</p>
                         </div>
                     </div>
 
@@ -103,7 +103,7 @@ export default function Hero({ contactRef }) {
                             <FaCheckCircle />
                         </div>
                         <div>
-                            <p className="text-sm font-bold text-blue-600">10+</p>
+                            <p className="text-sm font-bold text-blue-600">5+</p>
                             <p className="text-gray-600 text-[10px]">Projects Completed</p>
                         </div>
                     </div>
@@ -114,8 +114,8 @@ export default function Hero({ contactRef }) {
                             <FaSmile />
                         </div>
                         <div>
-                            <p className="text-sm font-bold text-blue-600">5+</p>
-                            <p className="text-gray-600 text-[10px]">Happy Clients</p>
+                            <p className="text-sm font-bold text-blue-600">3+</p>
+                            <p className="text-gray-600 text-[10px]">Frameworks Used</p>
                         </div>
                     </div>
                 </div>
